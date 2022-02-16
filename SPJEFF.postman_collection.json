@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "d1da0f9e-96a3-4bcd-a55a-47cbab358328",
+		"name": "SPJEFF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "client_secret_here",
+							"type": "default"
+						},
+						{
+							"key": "client_id",
+							"value": "fb52dd57-1efa-456e-a2e9-89172fca290c",
+							"type": "default"
+						},
+						{
+							"key": "scope",
+							"value": "https://graph.microsoft.com/.default",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/0a9449ca-3619-4fca-8644-bdd67d0c8ca6/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"0a9449ca-3619-4fca-8644-bdd67d0c8ca6",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "METADATA",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenType",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6Img4SFUxYm1HVktVbHYtNXVjcTFRbks3TDBMa0RicmtOTzIwaV9kblBPWlUiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1yNS1BVWliZkJpaTdOZDFqQmViYXhib1hXMCIsImtpZCI6Ik1yNS1BVWliZkJpaTdOZDFqQmViYXhib1hXMCJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8wYTk0NDljYS0zNjE5LTRmY2EtODY0NC1iZGQ2N2QwYzhjYTYvIiwiaWF0IjoxNjQ0NDMxMjkxLCJuYmYiOjE2NDQ0MzEyOTEsImV4cCI6MTY0NDQzNTE5MSwiYWlvIjoiRTJaZ1lCRE4vcElRR0psdUk3TXRaN2s2eCtrRkFBPT0iLCJhcHBfZGlzcGxheW5hbWUiOiJEYXRhdmVyc2UiLCJhcHBpZCI6ImZiNTJkZDU3LTFlZmEtNDU2ZS1hMmU5LTg5MTcyZmNhMjkwYyIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzBhOTQ0OWNhLTM2MTktNGZjYS04NjQ0LWJkZDY3ZDBjOGNhNi8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6ImU0NTY1Y2M2LTRjNWQtNGVkYi04ZmE3LTQ0Njg0ODU4OWQ0NSIsInJoIjoiMC5BWGNBeWttVUNoazJ5ay1HUkwzV2ZReU1wZ01BQUFBQUFBQUF3QUFBQUFBQUFBQjNBQUEuIiwic3ViIjoiZTQ1NjVjYzYtNGM1ZC00ZWRiLThmYTctNDQ2ODQ4NTg5ZDQ1IiwidGVuYW50X3JlZ2lvbl9zY29wZSI6Ik5BIiwidGlkIjoiMGE5NDQ5Y2EtMzYxOS00ZmNhLTg2NDQtYmRkNjdkMGM4Y2E2IiwidXRpIjoiSFNfdjZIOUEwRXFhYmdjaGFxUjJBQSIsInZlciI6IjEuMCIsIndpZHMiOlsiMDk5N2ExZDAtMGQxZC00YWNiLWI0MDgtZDVjYTczMTIxZTkwIl0sInhtc190Y2R0IjoxNDcxODg5MDQ5fQ.Akzqyd8z0u67ZdSDTktwfuz9epfJWvlvQIpkAdPrSHSQE58jvZZF2CmUev-gTzvAVEUNf-REQ1DI14Vukl8QxpJMNwXGNra-EuRJO5N61yQN0jj7V1UenQrNkLhKO43_7YgTONRAHHJFZ2cp58cYPulZ4tSV1yp3PVVxYJ01G1_Kqm5jFglGxB6eJ5YOampPZq__z4SvffCbWmxcDrb6gG8MJZTkNXiro-JObeFmpdPuEOgVpBj1Fw-z9xdVeoyVjx0fxl1uDdpCQer7K4VQx5V0xuJG-KDTQSII6HeTNDOKKCB9-TdaTCEiSJukWWvpkZUXE_aMA3aIMXSbbDE8Hw",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "SPJEFF",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "{{callback}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{clientid}}",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "{{authurl}}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "implicit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{webapiurl}}$metadata",
+					"host": [
+						"{{webapiurl}}$metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONTACT",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenName",
+							"value": "SPJEFF",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "{{callback}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{clientid}}",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "{{authurl}}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "implicit",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{webapiurl}}",
+					"host": [
+						"{{webapiurl}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
